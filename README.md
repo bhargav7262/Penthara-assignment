@@ -1,4 +1,4 @@
-# 💸 Personal Expense Tracker
+# Personal Expense Tracker
 
 A modern, responsive web application designed to simplify personal finance management. This dashboard allows users to track expenses in real-time, visualize spending habits, and maintain control over their financial data through a secure, cloud-based infrastructure.
 
@@ -14,8 +14,6 @@ A modern, responsive web application designed to simplify personal finance manag
 - [Application Previews](#-application-previews)
 - [Getting Started](#-getting-started)
 - [Project Structure](#-project-structure)
-- [Future Improvements](#-future-improvements)
-- [Author](#-author)
 
 ---
 
