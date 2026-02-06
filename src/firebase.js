@@ -5,13 +5,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBVxVwD5jFOhCFQRo4Bwyh8v62bnI_c8Es",
-    authDomain: "pentharas.firebaseapp.com",
-    projectId: "pentharas",
-    storageBucket: "pentharas.firebasestorage.app",
-    messagingSenderId: "885613642615",
-    appId: "1:885613642615:web:4c6af4c6438a1b0bf39772",
-    measurementId: "G-10V59F0D4V"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
