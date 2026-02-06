@@ -19,6 +19,12 @@ I've packed this detailed dashboard with features to make expense management smo
 -   **Cloud Storage:** Your data is saved safely in the cloud (**Firestore**), so you can access it from anywhere.
 -   **Responsive Design:** It looks great and works perfectly on both your computer and mobile phone.
 
+## 📱 Application Previews
+
+| **Login Screen** | **Expense Modal** |
+|:---:|:---:|
+| <img src="./assets/login.png" alt="Login Screen" width="400"/> | <img src="./assets/modal.png" alt="Modal" width="400"/> |
+
 ## 🛠️ Tech Stack
 
 I built this using some of the best modern web technologies:
