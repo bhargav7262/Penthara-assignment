@@ -1,55 +1,127 @@
-# 💸 My Expense Tracker
+# 💸 Personal Expense Tracker
 
-Hi there! Welcome to my Expense Tracker application. I built this project to make tracking daily expenses simple, visual, and effective. Whether you're budgeting for the month or just curious where your money goes, this tool is designed to help you stay on top of your finances.
+A modern, responsive web application designed to simplify personal finance management. This dashboard allows users to track expenses in real-time, visualize spending habits, and maintain control over their financial data through a secure, cloud-based infrastructure.
 
-## 🚀 Live Demo
+[Live Demo](https://penthara.netlify.app/)
 
-**I am currently hosting this website and you can check it out here:**
-[**👉 CLICK HERE TO VISIT THE LIVE APP**](YOUR_LINK_HERE)
+---
 
-*(Note: Please replace `YOUR_LINK_HERE` with the actual URL of your hosted website)*
+## 📖 Table of Contents
 
-## ✨ What Can It Do?
+- [Project Overview](#-project-overview)
+- [Key Features](#-key-features)
+- [Architecture & Tech Stack](#-architecture--tech-stack)
+- [Application Previews](#-application-previews)
+- [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
 
-I've packed this detailed dashboard with features to make expense management smooth:
+---
 
--   **Secure Accounts:** Sign up and log in securely to keep your data private (powered by **Firebase Authentication**).
--   **Visual Insights:** See where your money is going at a glance with interactive charts (using **Recharts**).
--   **Easy Management:** Add new expenses quickly and delete the ones you no longer need.
--   **Cloud Storage:** Your data is saved safely in the cloud (**Firestore**), so you can access it from anywhere.
--   **Responsive Design:** It looks great and works perfectly on both your computer and mobile phone.
+## 🧐 Project Overview
 
-## 📱 Application Previews
+Managing finances shouldn't be a chore. This project was built to solve the problem of fragmented financial tracking. By leveraging the speed of Vite and the reliability of Firebase, this application offers a seamless experience for users to log, view, and analyze their daily expenditures.
 
-| **Login Screen** | **Expense Modal** |
+The goal of this assignment was to demonstrate proficiency in:
+* **React** state management
+* **Component modularity**
+* **BaaS** (Backend as a Service) integration
+
+---
+
+## ✨ Key Features
+
+* **🔐 Secure Authentication:** Robust sign-up and login functionality powered by **Firebase Auth**, ensuring user data remains private and secure.
+* **📊 Dynamic Data Visualization:** Interactive pie charts and graphs (via **Recharts**) provide immediate insights into spending distribution across categories.
+* **⚡ Real-Time Database:** Utilizes **Firestore** to sync data instantly across devices. Add an expense on your phone, and it appears immediately on your desktop.
+* **📱 Fully Responsive:** Specific UI/UX design implemented with **Tailwind CSS** guarantees a smooth interface on mobile, tablet, and desktop screens.
+* **🗑 CRUD Functionality:** Complete control to Create, Read, Update, and Delete expense records effortlessly.
+
+---
+
+## 🛠 Architecture & Tech Stack
+
+This project uses a component-based architecture using the following technologies:
+
+### Frontend
+* **React (v18):** Core UI library for building the component tree.
+* **Vite:** Next-generation frontend tooling for ultra-fast build times.
+* **Tailwind CSS:** Utility-first CSS framework for rapid, responsive styling.
+* **Lucide React:** Lightweight, scalable icon library.
+* **Recharts:** Composable charting library for React components.
+
+### Backend & Services
+* **Firebase Authentication:** Identity management.
+* **Cloud Firestore:** NoSQL cloud database for storing expense documents.
+
+---
+
+## 📸 Application Previews
+
+| Dashboard View | Add Expense Modal |
 |:---:|:---:|
-| <img src="./assets/login.png" alt="Login Screen" width="400"/> | <img src="./assets/modal.png" alt="Modal" width="400"/> |
+| <img src="./assets/login.png.png" alt="Dashboard" width="400"/> | <img src="./assets/model.png.png" alt="Modal" width="400"/> |
 
-## 🛠️ Tech Stack
+*(Note: Please ensure you upload screenshots to an `assets` folder in your repo or update the links above)*
 
-I built this using some of the best modern web technologies:
+---
 
--   **React** (for the user interface)
--   **Vite** (for fast development and building)
--   **Tailwind CSS** (for beautiful, responsive styling)
--   **Firebase** (for Authentication & Database)
--   **Lucide React** (for the sleek icons)
+## 🚀 Getting Started
 
-## 🏃‍♂️ How to Run Locally
+Follow these instructions to set up the project locally on your machine.
 
-If you'd like to run this code on your own machine:
+### Prerequisites
+* Node.js (v16 or higher)
+* npm or yarn
 
-1.  **Clone the repository:**
+### Installation Steps
+
+1.  **Clone the Repository**
     ```bash
-    git clone <repository-url>
+    git clone [https://github.com/your-username/expense-tracker.git](https://github.com/your-username/expense-tracker.git)
+    cd expense-tracker
     ```
-2.  **Install dependencies:**
+
+2.  **Install Dependencies**
     ```bash
     npm install
     ```
-3.  **Start the development server:**
+
+3.  **⚠️ Configure Environment Variables**
+    Create a file named `.env` in the root directory. Add your Firebase configuration keys (these are required for the database to connect):
+
+    ```env
+    VITE_API_KEY=your_api_key
+    VITE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+    VITE_PROJECT_ID=your_project_id
+    VITE_STORAGE_BUCKET=your_project_id.appspot.com
+    VITE_MESSAGING_SENDER_ID=your_sender_id
+    VITE_APP_ID=your_app_id
+    ```
+
+4.  **Run the Development Server**
     ```bash
     npm run dev
     ```
 
-Feel free to explore the code and let me know what you think! Happy tracking! 📉
+5.  **Open the App**
+    Visit `http://localhost:5173` in your browser.
+
+---
+
+## 📂 Project Structure
+
+A quick look at the top-level files and directories you'll see in this project.
+
+```text
+.
+├── src/
+│   ├── components/    # Reusable UI components (Cards, Charts, Modals)
+│   ├── contexts/      # Context API for global state (AuthContext)
+│   ├── pages/         # Page components (Dashboard, Login, Signup)
+│   ├── config/        # Firebase initialization
+│   ├── App.jsx        # Main application entry
+│   └── main.jsx       # DOM rendering
+├── public/            # Static assets
+└── index.html         # HTML entry point
