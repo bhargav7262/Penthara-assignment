@@ -61,7 +61,7 @@ This project uses a component-based architecture using the following technologie
 
 | Dashboard View | Add Expense Modal |
 |:---:|:---:|
-| <img src="./assets/login.png.png" alt="Dashboard" width="400"/> | <img src="./assets/model.png.png" alt="Modal" width="400"/> |
+| <img src="src/assets/login.png.png" alt="Dashboard" width="400"/> | <img src="src/assets/model.png.png" alt="Modal" width="400"/> |
 
 *(Note: Please ensure you upload screenshots to an `assets` folder in your repo or update the links above)*
 
